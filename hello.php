@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
 }
 ?>
  <?php 
- $name = 'Mohammed peiyuk';
+ $name = 'Camouflage Squad';
  echo '<p>Hello, ', $name, '</p>'; 
  ?> 
  </body>
