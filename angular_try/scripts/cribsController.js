@@ -13,4 +13,8 @@
 			console.log("finally finished gists");
 		});
 
+	$scope.sayHello = function() {
+		console.log("Hello!");
+	}
+
  	});
