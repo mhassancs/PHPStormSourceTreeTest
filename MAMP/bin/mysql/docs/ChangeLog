@@ -1,0 +1,45 @@
+commit 5b49064e2f605240a13b7d7541ae6f50bcca09dd
+Author: Lars Tangvald <lars.tangvald@oracle.com>
+Date:   Fri Sep 30 12:58:19 2016 +0200
+
+    Bug#24761774	PACKAGE UPGRADE FROM 5.6.33 TO 34 FAILING DUE TO SECURE-FILE-PRIV PROBLEMS
+    
+    Added creation of missing directory to server postinst
+    
+    (cherry picked from commit e23c9bd1a18e4914b0371be049a2af8ee01e6e02)
+
+commit 757e64549a14a3ac89068ec87a06e1edd3870ed9
+Author: Arun Kuruvila <arun.kuruvila@oracle.com>
+Date:   Wed Sep 28 16:03:29 2016 +0530
+
+    Merge branch 'mysql-5.5' into mysql-5.6
+    
+    (cherry picked from commit 1403ef65161f177fc6b680808f071ddb798f2fe5)
+
+commit 8a8cb3dee903131d54abfd4abe94d351ba0db4e9
+Author: Robert Golebiowski <robert.golebiowski@oracle.com>
+Date:   Tue Sep 27 11:18:14 2016 +0200
+
+    Merge branch 'mysql-5.5' into mysql-5.6
+    
+    (cherry picked from commit 33b874c3b38c4a551f51ee3df33a9e9a3c8725b6)
+
+commit 854254ccb35dc3724713c13ba8cc85f712e9d142
+Merge: 4809c9b 259f2ca
+Author: Balasubramanian Kandasamy <balasubramanian.kandasamy@oracle.com>
+Date:   Mon Sep 26 23:49:46 2016 +0530
+
+    Merge branch 'mysql-5.6.33-release' into mysql-5.6.34-release
+
+commit 4809c9b03e4c45cbc3a001f21ae57eb20606022c
+Merge: e945f3b6 5b0fd61
+Author: Balasubramanian Kandasamy <balasubramanian.kandasamy@oracle.com>
+Date:   Mon Aug 8 15:18:39 2016 +0530
+
+    Raise version number after cloning 5.6.33
+
+commit 5b0fd618e5b8155c4533f51cb6cf3b460aee8463
+Author: Balasubramanian Kandasamy <balasubramanian.kandasamy@oracle.com>
+Date:   Mon Aug 8 15:15:17 2016 +0530
+
+    Raise version number after cloning 5.5.52

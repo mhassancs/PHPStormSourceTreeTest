@@ -4,5 +4,35 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.5.38/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.1.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.4.1/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.6.30/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.0.19/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.6.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.5.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.4.45/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.0.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.1.5/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.3.23/pharcommand.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.5.38/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.1.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.4.1/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.6.30/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.0.19/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.6.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.5.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.4.45/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.0.0/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php7.1.5/pharcommand.phar/" />
+          <root url="phar://$MODULE_DIR$/MAMP/bin/php/php5.3.23/pharcommand.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
