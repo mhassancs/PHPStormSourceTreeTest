@@ -1,4 +1,0 @@
-# BrandingVerticals Wordpress Boilerplate.
-
-
-
