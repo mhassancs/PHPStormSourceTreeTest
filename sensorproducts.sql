@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 04, 2017 at 08:27 PM
+-- Generation Time: Nov 04, 2017 at 08:33 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -19,19 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `sensorproducts`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `l`
---
-
-CREATE TABLE `l` (
-  `j` int(11) NOT NULL,
-  `l` int(11) NOT NULL,
-  `o` int(11) NOT NULL,
-  `k` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 

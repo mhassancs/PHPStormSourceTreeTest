@@ -1,10 +1,14 @@
  angular
  	.module('angular_Cribs')
- 	.controller('angular_Controller', function($scope, cribsFactory) {
+ 	.controller('angular_Controller', function($scope, angular_Factory) {
 
 	$scope.residences;
+	$scope.priceInfo = {
+		min:0,
+		max:10000000
+	}
 
-	cribsFactory.get_Cribs().then(function(response) {
+	angular_Factory.get_Cribs().then(function(response) {
 			$scope.residences = response.data;
 		}).catch(function(response) {
 			console.error('Recidences error', response.status, response.data);

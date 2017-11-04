@@ -1,6 +1,6 @@
  angular
  	.module('angular_Cribs')
- 	.factory('cribsFactory', function($http) {
+ 	.factory('abbgular_Factory', function($http) {
 
  		function get_angularCribs() {
  			return $http.get('data/data.json');
