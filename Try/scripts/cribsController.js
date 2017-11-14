@@ -1,12 +1,8 @@
  angular
  	.module('angular_Cribs')
- 	.controller('angular_Controller', function($scope, angular_Factory) {
+ 	.controller('angular_Controller', function($scope, cribsFactory) {
 
 	$scope.residences;
-	$scope.priceInfo = {
-		min:0,
-		max:10000000
-	}
 
 	angular_Factory.get_Cribs().then(function(response) {
 			$scope.residences = response.data;

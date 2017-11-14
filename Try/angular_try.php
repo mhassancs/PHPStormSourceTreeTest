@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<title>ng-Cribs</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="angular_css/style.css">
     </head>
-	<body ng-app="angular_Cribs" ng-controller="angular_Controller">
+	<body ng-app="angular_Cribs" ng-controller="cribsController">
 
         <!-- Nav bar-->
         <nav class="navbar navbar-default">
