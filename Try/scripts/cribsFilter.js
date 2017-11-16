@@ -1,6 +1,6 @@
 angular
-    .module('ngCribs')
-    .filter('cribsFilter', function() {
+    .module('angular_Cribs')
+    .filter('angular_Filter', function() {
 
         return function(listings, priceInfo) {
 

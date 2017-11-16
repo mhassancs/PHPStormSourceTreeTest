@@ -25,16 +25,17 @@
 			      <div class="input-group">
 			        <span class="input-group-addon">Min Price</span>
 			        <select name="minPrice" id="minPrice" ng-model="priceInfo.min" class="form-control">
-			          <option value="100000">$100,000</option>
-			          <option value="200000">$200,000</option>
-			          <option value="300000">$300,000</option>
-			          <option value="400000">$400,000</option>
-			          <option value="500000">$500,000</option>
-			          <option value="600000">$600,000</option>
-			          <option value="700000">$700,000</option>
-			          <option value="800000">$800,000</option>
-			          <option value="900000">$900,000</option>
-			          <option value="1000000">$1,000,000</option>
+                        <option value="0">$0</option>
+                        <option value="1000">$1,000</option>
+                        <option value="2000">$2,000</option>
+                        <option value="3000">$3,000</option>
+                        <option value="4000">$4,000</option>
+                        <option value="5000">$5,000</option>
+                        <option value="6000">$6,000</option>
+                        <option value="7000">$7,000</option>
+                        <option value="8000">$8,000</option>
+                        <option value="9000">$9,000</option>
+                        <option value="10000">$10,000</option>
 			        </select>
 			      </div>          
 			    </div>
@@ -43,16 +44,16 @@
 			      <div class="input-group">
 			        <span class="input-group-addon">Max Price</span>
 			        <select name="maxPrice" id="maxPrice" ng-model="priceInfo.max" class="form-control">
-			          <option value="100000">$100,000</option>
-			          <option value="200000">$200,000</option>
-			          <option value="300000">$300,000</option>
-			          <option value="400000">$400,000</option>
-			          <option value="500000">$500,000</option>
-			          <option value="600000">$600,000</option>
-			          <option value="700000">$700,000</option>
-			          <option value="800000">$800,000</option>
-			          <option value="900000">$900,000</option>
-			          <option value="1000000">$1,000,000</option>
+			          <option value="1000">$1,000</option>
+			          <option value="2000">$2,000</option>
+			          <option value="3000">$3,000</option>
+			          <option value="4000">$4,000</option>
+			          <option value="5000">$5,000</option>
+			          <option value="6000">$6,000</option>
+			          <option value="7000">$7,000</option>
+			          <option value="8000">$8,000</option>
+			          <option value="9000">$9,000</option>
+			          <option value="10000">$10,000</option>
 			        </select>
 			      </div>          
 			    </div>
@@ -105,10 +106,8 @@
 		              	id="propertyType" 
 		              	class="form-control" 
 		              	ng-model="newListing.type">
-			                <option value="House">House</option>
-			                <option value="Condo">Condo</option>
-			                <option value="Duplex">Duplex</option>
-			                <option value="Apartment">Apartment</option>
+			                <option value="Film">Film</option>
+			                <option value="Nip">Nip</option>
 		              </select>
 		            </div>
 		          </div>
@@ -208,10 +207,8 @@
 	               	id="propertyType" 
 	               	class="form-control" 
 	               	ng-model="existingListing.type">
-	      	           <option value="House">House</option>
-	      	           <option value="Condo">Condo</option>
-	      	           <option value="Duplex">Duplex</option>
-	      	           <option value="Apartment">Apartment</option>
+	      	           <option value="Film">Film</option>
+	      	           <option value="Nip">Nip</option>
 	               </select>
 	             </div>
 	           </div>

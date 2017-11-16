@@ -6,7 +6,7 @@ angular
 
 		$scope.priceInfo = {
 			min: 0,
-			max: 1000000
+			max: 10000
 		}
 
 		$scope.newListing = {};

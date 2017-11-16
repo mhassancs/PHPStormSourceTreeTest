@@ -1,6 +1,6 @@
  angular
  	.module('angular_Cribs')
- 	.controller('angular_Controller', function($scope, cribsFactory) {
+ 	.controller('angular_Controller', function($scope, angular_Factory) {
 
 	$scope.residences;
 
