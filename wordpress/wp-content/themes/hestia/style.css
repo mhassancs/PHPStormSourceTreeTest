@@ -8256,3 +8256,7 @@ footer .wpml-ls-item-legacy-dropdown-click a {
     padding: 15px 0;
   }
 }
+
+.site-info {
+    display : none;
+}

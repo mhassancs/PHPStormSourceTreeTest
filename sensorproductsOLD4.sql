@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 12, 2017 at 05:21 AM
+-- Generation Time: Dec 12, 2017 at 05:12 AM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.1.5
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `sensorproducts`
 --
+CREATE DATABASE IF NOT EXISTS `sensorproducts` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `sensorproducts`;
 
 -- --------------------------------------------------------
 
@@ -147,7 +149,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:10:{i:0;s:19:\"jetpack/jetpack.php\";i:1;s:15:\"kirki/kirki.php\";i:2;s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";i:3;s:29:\"pirate-forms/pirate-forms.php\";i:5;s:43:\"themeisle-companion/themeisle-companion.php\";i:6;s:53:\"widget-importer-exporter/widget-importer-exporter.php\";i:7;s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";i:8;s:45:\"woocommerce-services/woocommerce-services.php\";i:9;s:27:\"woocommerce/woocommerce.php\";i:10;s:41:\"wordpress-importer/wordpress-importer.php\";}', 'yes'),
+(33, 'active_plugins', 'a:11:{i:0;s:19:\"jetpack/jetpack.php\";i:1;s:15:\"kirki/kirki.php\";i:2;s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";i:3;s:29:\"pirate-forms/pirate-forms.php\";i:4;s:45:\"remove-footer-credit/remove-footer-credit.php\";i:5;s:43:\"themeisle-companion/themeisle-companion.php\";i:6;s:53:\"widget-importer-exporter/widget-importer-exporter.php\";i:7;s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";i:8;s:45:\"woocommerce-services/woocommerce-services.php\";i:9;s:27:\"woocommerce/woocommerce.php\";i:10;s:41:\"wordpress-importer/wordpress-importer.php\";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -222,7 +224,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (105, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(108, 'cron', 'a:11:{i:1513058839;a:1:{s:20:\"jetpack_clean_nonces\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1513059305;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1513062491;a:1:{s:26:\"upgrader_scheduled_cleanup\";a:1:{s:32:\"94de55982e641782aa944c8edbddd895\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:1:{i:0;i:114;}}}}i:1513075218;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1513076683;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1513118428;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513119883;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513121871;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513123200;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1515283200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
+(108, 'cron', 'a:11:{i:1513055659;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1513058839;a:1:{s:20:\"jetpack_clean_nonces\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1513062491;a:1:{s:26:\"upgrader_scheduled_cleanup\";a:1:{s:32:\"94de55982e641782aa944c8edbddd895\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:1:{i:0;i:114;}}}}i:1513075218;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1513076683;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1513118428;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513119883;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513121871;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1513123200;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1515283200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
 (109, 'nonce_key', 'JyX7MKsjkY8!t<-6 0bnNh]Ft8#q1:V:dSw3c> GrC%g_=Nh/6V[UIUT:f!/^=22', 'no'),
 (110, 'nonce_salt', '8B:xV:#$DCG9f:D7%WzszMEY!%B,8+e6Bf<lCL#JkN9}V$9|e8?&W%XS[.E7:1$Y', 'no'),
 (111, 'theme_mods_twentyseventeen', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1509403344;s:4:\"data\";a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:9:\"sidebar-3\";a:0:{}}}}', 'yes'),
@@ -244,9 +246,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (157, 'woocommerce_enable_myaccount_registration', 'yes', 'yes'),
 (161, '_site_transient_timeout_popular_importers_7231214689b7978b24635a89c6936cee', '1509576395', 'no'),
 (162, '_site_transient_popular_importers_7231214689b7978b24635a89c6936cee', 'a:2:{s:9:\"importers\";a:8:{s:7:\"blogger\";a:4:{s:4:\"name\";s:7:\"Blogger\";s:11:\"description\";s:54:\"Import posts, comments, and users from a Blogger blog.\";s:11:\"plugin-slug\";s:16:\"blogger-importer\";s:11:\"importer-id\";s:7:\"blogger\";}s:9:\"wpcat2tag\";a:4:{s:4:\"name\";s:29:\"Categories and Tags Converter\";s:11:\"description\";s:71:\"Convert existing categories to tags or tags to categories, selectively.\";s:11:\"plugin-slug\";s:18:\"wpcat2tag-importer\";s:11:\"importer-id\";s:10:\"wp-cat2tag\";}s:11:\"livejournal\";a:4:{s:4:\"name\";s:11:\"LiveJournal\";s:11:\"description\";s:46:\"Import posts from LiveJournal using their API.\";s:11:\"plugin-slug\";s:20:\"livejournal-importer\";s:11:\"importer-id\";s:11:\"livejournal\";}s:11:\"movabletype\";a:4:{s:4:\"name\";s:24:\"Movable Type and TypePad\";s:11:\"description\";s:62:\"Import posts and comments from a Movable Type or TypePad blog.\";s:11:\"plugin-slug\";s:20:\"movabletype-importer\";s:11:\"importer-id\";s:2:\"mt\";}s:4:\"opml\";a:4:{s:4:\"name\";s:8:\"Blogroll\";s:11:\"description\";s:28:\"Import links in OPML format.\";s:11:\"plugin-slug\";s:13:\"opml-importer\";s:11:\"importer-id\";s:4:\"opml\";}s:3:\"rss\";a:4:{s:4:\"name\";s:3:\"RSS\";s:11:\"description\";s:30:\"Import posts from an RSS feed.\";s:11:\"plugin-slug\";s:12:\"rss-importer\";s:11:\"importer-id\";s:3:\"rss\";}s:6:\"tumblr\";a:4:{s:4:\"name\";s:6:\"Tumblr\";s:11:\"description\";s:53:\"Import posts &amp; media from Tumblr using their API.\";s:11:\"plugin-slug\";s:15:\"tumblr-importer\";s:11:\"importer-id\";s:6:\"tumblr\";}s:9:\"wordpress\";a:4:{s:4:\"name\";s:9:\"WordPress\";s:11:\"description\";s:96:\"Import posts, pages, comments, custom fields, categories, and tags from a WordPress export file.\";s:11:\"plugin-slug\";s:18:\"wordpress-importer\";s:11:\"importer-id\";s:9:\"wordpress\";}}s:10:\"translated\";b:0;}', 'no'),
-(166, 'recently_activated', 'a:1:{s:45:\"remove-footer-credit/remove-footer-credit.php\";i:1513055783;}', 'yes'),
-(167, '_transient_timeout_plugin_slugs', '1513142184', 'no'),
-(168, '_transient_plugin_slugs', 'a:11:{i:0;s:29:\"pirate-forms/pirate-forms.php\";i:1;s:19:\"jetpack/jetpack.php\";i:2;s:15:\"kirki/kirki.php\";i:3;s:43:\"themeisle-companion/themeisle-companion.php\";i:4;s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";i:5;s:45:\"remove-footer-credit/remove-footer-credit.php\";i:6;s:53:\"widget-importer-exporter/widget-importer-exporter.php\";i:7;s:27:\"woocommerce/woocommerce.php\";i:8;s:45:\"woocommerce-services/woocommerce-services.php\";i:9;s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";i:10;s:41:\"wordpress-importer/wordpress-importer.php\";}', 'no'),
+(166, 'recently_activated', 'a:0:{}', 'yes'),
+(167, '_transient_timeout_plugin_slugs', '1513141729', 'no'),
+(168, '_transient_plugin_slugs', 'a:13:{i:0;s:19:\"akismet/akismet.php\";i:1;s:29:\"pirate-forms/pirate-forms.php\";i:2;s:9:\"hello.php\";i:3;s:19:\"jetpack/jetpack.php\";i:4;s:15:\"kirki/kirki.php\";i:5;s:43:\"themeisle-companion/themeisle-companion.php\";i:6;s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";i:7;s:45:\"remove-footer-credit/remove-footer-credit.php\";i:8;s:53:\"widget-importer-exporter/widget-importer-exporter.php\";i:9;s:27:\"woocommerce/woocommerce.php\";i:10;s:45:\"woocommerce-services/woocommerce-services.php\";i:11;s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";i:12;s:41:\"wordpress-importer/wordpress-importer.php\";}', 'no'),
 (171, 'woocommerce_store_address', '36 Madison Ave', 'yes'),
 (172, 'woocommerce_store_address_2', '', 'yes'),
 (173, 'woocommerce_store_city', 'Madison', 'yes'),
@@ -450,10 +452,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1134, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1513055293;s:7:\"checked\";a:7:{s:24:\"BV_WP_Boilerplate-master\";s:3:\"1.0\";s:22:\"Sensor_Products-master\";s:3:\"1.0\";s:6:\"hestia\";s:6:\"1.1.53\";s:13:\"twentyfifteen\";s:3:\"1.8\";s:15:\"twentyseventeen\";s:3:\"1.3\";s:13:\"twentysixteen\";s:3:\"1.3\";s:5:\"tyche\";s:6:\"1.0.13\";}s:8:\"response\";a:4:{s:6:\"hestia\";a:4:{s:5:\"theme\";s:6:\"hestia\";s:11:\"new_version\";s:6:\"1.1.56\";s:3:\"url\";s:36:\"https://wordpress.org/themes/hestia/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/theme/hestia.1.1.56.zip\";}s:13:\"twentyfifteen\";a:4:{s:5:\"theme\";s:13:\"twentyfifteen\";s:11:\"new_version\";s:3:\"1.9\";s:3:\"url\";s:43:\"https://wordpress.org/themes/twentyfifteen/\";s:7:\"package\";s:59:\"https://downloads.wordpress.org/theme/twentyfifteen.1.9.zip\";}s:15:\"twentyseventeen\";a:4:{s:5:\"theme\";s:15:\"twentyseventeen\";s:11:\"new_version\";s:3:\"1.4\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentyseventeen/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentyseventeen.1.4.zip\";}s:13:\"twentysixteen\";a:4:{s:5:\"theme\";s:13:\"twentysixteen\";s:11:\"new_version\";s:3:\"1.4\";s:3:\"url\";s:43:\"https://wordpress.org/themes/twentysixteen/\";s:7:\"package\";s:59:\"https://downloads.wordpress.org/theme/twentysixteen.1.4.zip\";}}s:12:\"translations\";a:0:{}}', 'no'),
 (1136, '_transient_timeout_wc_related_17', '1513123593', 'no'),
 (1137, '_transient_wc_related_17', 'a:6:{i:0;s:2:\"11\";i:1;s:2:\"12\";i:2;s:2:\"13\";i:3;s:2:\"14\";i:4;s:2:\"15\";i:5;s:2:\"16\";}', 'no'),
-(1138, '_transient_timeout_wc_related_18', '1513142384', 'no'),
+(1138, '_transient_timeout_wc_related_18', '1513141888', 'no'),
 (1139, '_transient_wc_related_18', 'a:0:{}', 'no'),
 (1143, '_transient_timeout_jetpack_https_test', '1513124418', 'no'),
 (1144, '_transient_jetpack_https_test', '1', 'no'),
+(1149, '_transient_timeout_jetpack_idc_allowed', '1513055661', 'no'),
+(1150, '_transient_jetpack_idc_allowed', '1', 'no'),
 (1151, '_site_transient_timeout_browser_cb0f25941c7ee58acd15fece4d84c18b', '1513657676', 'no'),
 (1152, '_site_transient_browser_cb0f25941c7ee58acd15fece4d84c18b', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"62.0.3202.94\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (1153, '_transient_timeout_feed_9bc1b9ec726e1f508c5207949084454a', '1513096077', 'no');
@@ -500,11 +504,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1191, '_transient_wc_upgrade_notice_3.2.5', '', 'no'),
 (1192, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1513066070', 'no'),
 (1193, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:\"stdClass\":100:{s:6:\"widget\";a:3:{s:4:\"name\";s:6:\"widget\";s:4:\"slug\";s:6:\"widget\";s:5:\"count\";i:4409;}s:4:\"post\";a:3:{s:4:\"name\";s:4:\"post\";s:4:\"slug\";s:4:\"post\";s:5:\"count\";i:2520;}s:11:\"woocommerce\";a:3:{s:4:\"name\";s:11:\"woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:5:\"count\";i:2462;}s:5:\"admin\";a:3:{s:4:\"name\";s:5:\"admin\";s:4:\"slug\";s:5:\"admin\";s:5:\"count\";i:2382;}s:5:\"posts\";a:3:{s:4:\"name\";s:5:\"posts\";s:4:\"slug\";s:5:\"posts\";s:5:\"count\";i:1848;}s:8:\"comments\";a:3:{s:4:\"name\";s:8:\"comments\";s:4:\"slug\";s:8:\"comments\";s:5:\"count\";i:1616;}s:9:\"shortcode\";a:3:{s:4:\"name\";s:9:\"shortcode\";s:4:\"slug\";s:9:\"shortcode\";s:5:\"count\";i:1611;}s:7:\"twitter\";a:3:{s:4:\"name\";s:7:\"twitter\";s:4:\"slug\";s:7:\"twitter\";s:5:\"count\";i:1439;}s:6:\"images\";a:3:{s:4:\"name\";s:6:\"images\";s:4:\"slug\";s:6:\"images\";s:5:\"count\";i:1369;}s:6:\"google\";a:3:{s:4:\"name\";s:6:\"google\";s:4:\"slug\";s:6:\"google\";s:5:\"count\";i:1367;}s:8:\"facebook\";a:3:{s:4:\"name\";s:8:\"facebook\";s:4:\"slug\";s:8:\"facebook\";s:5:\"count\";i:1354;}s:5:\"image\";a:3:{s:4:\"name\";s:5:\"image\";s:4:\"slug\";s:5:\"image\";s:5:\"count\";i:1285;}s:7:\"sidebar\";a:3:{s:4:\"name\";s:7:\"sidebar\";s:4:\"slug\";s:7:\"sidebar\";s:5:\"count\";i:1280;}s:3:\"seo\";a:3:{s:4:\"name\";s:3:\"seo\";s:4:\"slug\";s:3:\"seo\";s:5:\"count\";i:1161;}s:7:\"gallery\";a:3:{s:4:\"name\";s:7:\"gallery\";s:4:\"slug\";s:7:\"gallery\";s:5:\"count\";i:1072;}s:4:\"page\";a:3:{s:4:\"name\";s:4:\"page\";s:4:\"slug\";s:4:\"page\";s:5:\"count\";i:1055;}s:6:\"social\";a:3:{s:4:\"name\";s:6:\"social\";s:4:\"slug\";s:6:\"social\";s:5:\"count\";i:1005;}s:5:\"email\";a:3:{s:4:\"name\";s:5:\"email\";s:4:\"slug\";s:5:\"email\";s:5:\"count\";i:972;}s:9:\"ecommerce\";a:3:{s:4:\"name\";s:9:\"ecommerce\";s:4:\"slug\";s:9:\"ecommerce\";s:5:\"count\";i:843;}s:5:\"login\";a:3:{s:4:\"name\";s:5:\"login\";s:4:\"slug\";s:5:\"login\";s:5:\"count\";i:836;}s:5:\"links\";a:3:{s:4:\"name\";s:5:\"links\";s:4:\"slug\";s:5:\"links\";s:5:\"count\";i:817;}s:7:\"widgets\";a:3:{s:4:\"name\";s:7:\"widgets\";s:4:\"slug\";s:7:\"widgets\";s:5:\"count\";i:785;}s:5:\"video\";a:3:{s:4:\"name\";s:5:\"video\";s:4:\"slug\";s:5:\"video\";s:5:\"count\";i:778;}s:7:\"content\";a:3:{s:4:\"name\";s:7:\"content\";s:4:\"slug\";s:7:\"content\";s:5:\"count\";i:683;}s:3:\"rss\";a:3:{s:4:\"name\";s:3:\"rss\";s:4:\"slug\";s:3:\"rss\";s:5:\"count\";i:675;}s:8:\"security\";a:3:{s:4:\"name\";s:8:\"security\";s:4:\"slug\";s:8:\"security\";s:5:\"count\";i:672;}s:10:\"buddypress\";a:3:{s:4:\"name\";s:10:\"buddypress\";s:4:\"slug\";s:10:\"buddypress\";s:5:\"count\";i:670;}s:4:\"spam\";a:3:{s:4:\"name\";s:4:\"spam\";s:4:\"slug\";s:4:\"spam\";s:5:\"count\";i:663;}s:5:\"pages\";a:3:{s:4:\"name\";s:5:\"pages\";s:4:\"slug\";s:5:\"pages\";s:5:\"count\";i:650;}s:6:\"jquery\";a:3:{s:4:\"name\";s:6:\"jquery\";s:4:\"slug\";s:6:\"jquery\";s:5:\"count\";i:640;}s:6:\"slider\";a:3:{s:4:\"name\";s:6:\"slider\";s:4:\"slug\";s:6:\"slider\";s:5:\"count\";i:638;}s:5:\"media\";a:3:{s:4:\"name\";s:5:\"media\";s:4:\"slug\";s:5:\"media\";s:5:\"count\";i:619;}s:9:\"analytics\";a:3:{s:4:\"name\";s:9:\"analytics\";s:4:\"slug\";s:9:\"analytics\";s:5:\"count\";i:618;}s:4:\"feed\";a:3:{s:4:\"name\";s:4:\"feed\";s:4:\"slug\";s:4:\"feed\";s:5:\"count\";i:600;}s:4:\"ajax\";a:3:{s:4:\"name\";s:4:\"ajax\";s:4:\"slug\";s:4:\"ajax\";s:5:\"count\";i:592;}s:10:\"e-commerce\";a:3:{s:4:\"name\";s:10:\"e-commerce\";s:4:\"slug\";s:10:\"e-commerce\";s:5:\"count\";i:591;}s:6:\"search\";a:3:{s:4:\"name\";s:6:\"search\";s:4:\"slug\";s:6:\"search\";s:5:\"count\";i:590;}s:8:\"category\";a:3:{s:4:\"name\";s:8:\"category\";s:4:\"slug\";s:8:\"category\";s:5:\"count\";i:583;}s:4:\"menu\";a:3:{s:4:\"name\";s:4:\"menu\";s:4:\"slug\";s:4:\"menu\";s:5:\"count\";i:572;}s:4:\"form\";a:3:{s:4:\"name\";s:4:\"form\";s:4:\"slug\";s:4:\"form\";s:5:\"count\";i:569;}s:5:\"embed\";a:3:{s:4:\"name\";s:5:\"embed\";s:4:\"slug\";s:5:\"embed\";s:5:\"count\";i:550;}s:10:\"javascript\";a:3:{s:4:\"name\";s:10:\"javascript\";s:4:\"slug\";s:10:\"javascript\";s:5:\"count\";i:541;}s:4:\"link\";a:3:{s:4:\"name\";s:4:\"link\";s:4:\"slug\";s:4:\"link\";s:5:\"count\";i:530;}s:3:\"css\";a:3:{s:4:\"name\";s:3:\"css\";s:4:\"slug\";s:3:\"css\";s:5:\"count\";i:526;}s:5:\"share\";a:3:{s:4:\"name\";s:5:\"share\";s:4:\"slug\";s:5:\"share\";s:5:\"count\";i:513;}s:7:\"youtube\";a:3:{s:4:\"name\";s:7:\"youtube\";s:4:\"slug\";s:7:\"youtube\";s:5:\"count\";i:504;}s:7:\"comment\";a:3:{s:4:\"name\";s:7:\"comment\";s:4:\"slug\";s:7:\"comment\";s:5:\"count\";i:504;}s:5:\"theme\";a:3:{s:4:\"name\";s:5:\"theme\";s:4:\"slug\";s:5:\"theme\";s:5:\"count\";i:496;}s:9:\"dashboard\";a:3:{s:4:\"name\";s:9:\"dashboard\";s:4:\"slug\";s:9:\"dashboard\";s:5:\"count\";i:484;}s:10:\"responsive\";a:3:{s:4:\"name\";s:10:\"responsive\";s:4:\"slug\";s:10:\"responsive\";s:5:\"count\";i:483;}s:6:\"custom\";a:3:{s:4:\"name\";s:6:\"custom\";s:4:\"slug\";s:6:\"custom\";s:5:\"count\";i:480;}s:10:\"categories\";a:3:{s:4:\"name\";s:10:\"categories\";s:4:\"slug\";s:10:\"categories\";s:5:\"count\";i:474;}s:6:\"editor\";a:3:{s:4:\"name\";s:6:\"editor\";s:4:\"slug\";s:6:\"editor\";s:5:\"count\";i:460;}s:3:\"ads\";a:3:{s:4:\"name\";s:3:\"ads\";s:4:\"slug\";s:3:\"ads\";s:5:\"count\";i:457;}s:9:\"affiliate\";a:3:{s:4:\"name\";s:9:\"affiliate\";s:4:\"slug\";s:9:\"affiliate\";s:5:\"count\";i:456;}s:6:\"button\";a:3:{s:4:\"name\";s:6:\"button\";s:4:\"slug\";s:6:\"button\";s:5:\"count\";i:451;}s:12:\"contact-form\";a:3:{s:4:\"name\";s:12:\"contact form\";s:4:\"slug\";s:12:\"contact-form\";s:5:\"count\";i:450;}s:4:\"tags\";a:3:{s:4:\"name\";s:4:\"tags\";s:4:\"slug\";s:4:\"tags\";s:5:\"count\";i:447;}s:4:\"user\";a:3:{s:4:\"name\";s:4:\"user\";s:4:\"slug\";s:4:\"user\";s:5:\"count\";i:429;}s:6:\"mobile\";a:3:{s:4:\"name\";s:6:\"mobile\";s:4:\"slug\";s:6:\"mobile\";s:5:\"count\";i:416;}s:7:\"contact\";a:3:{s:4:\"name\";s:7:\"contact\";s:4:\"slug\";s:7:\"contact\";s:5:\"count\";i:416;}s:5:\"photo\";a:3:{s:4:\"name\";s:5:\"photo\";s:4:\"slug\";s:5:\"photo\";s:5:\"count\";i:416;}s:5:\"stats\";a:3:{s:4:\"name\";s:5:\"stats\";s:4:\"slug\";s:5:\"stats\";s:5:\"count\";i:410;}s:5:\"users\";a:3:{s:4:\"name\";s:5:\"users\";s:4:\"slug\";s:5:\"users\";s:5:\"count\";i:410;}s:9:\"slideshow\";a:3:{s:4:\"name\";s:9:\"slideshow\";s:4:\"slug\";s:9:\"slideshow\";s:5:\"count\";i:407;}s:6:\"photos\";a:3:{s:4:\"name\";s:6:\"photos\";s:4:\"slug\";s:6:\"photos\";s:5:\"count\";i:402;}s:3:\"api\";a:3:{s:4:\"name\";s:3:\"api\";s:4:\"slug\";s:3:\"api\";s:5:\"count\";i:399;}s:6:\"events\";a:3:{s:4:\"name\";s:6:\"events\";s:4:\"slug\";s:6:\"events\";s:5:\"count\";i:390;}s:10:\"statistics\";a:3:{s:4:\"name\";s:10:\"statistics\";s:4:\"slug\";s:10:\"statistics\";s:5:\"count\";i:386;}s:10:\"navigation\";a:3:{s:4:\"name\";s:10:\"navigation\";s:4:\"slug\";s:10:\"navigation\";s:5:\"count\";i:379;}s:4:\"news\";a:3:{s:4:\"name\";s:4:\"news\";s:4:\"slug\";s:4:\"news\";s:5:\"count\";i:358;}s:7:\"payment\";a:3:{s:4:\"name\";s:7:\"payment\";s:4:\"slug\";s:7:\"payment\";s:5:\"count\";i:352;}s:8:\"calendar\";a:3:{s:4:\"name\";s:8:\"calendar\";s:4:\"slug\";s:8:\"calendar\";s:5:\"count\";i:351;}s:10:\"shortcodes\";a:3:{s:4:\"name\";s:10:\"shortcodes\";s:4:\"slug\";s:10:\"shortcodes\";s:5:\"count\";i:345;}s:12:\"social-media\";a:3:{s:4:\"name\";s:12:\"social media\";s:4:\"slug\";s:12:\"social-media\";s:5:\"count\";i:338;}s:5:\"popup\";a:3:{s:4:\"name\";s:5:\"popup\";s:4:\"slug\";s:5:\"popup\";s:5:\"count\";i:337;}s:9:\"multisite\";a:3:{s:4:\"name\";s:9:\"multisite\";s:4:\"slug\";s:9:\"multisite\";s:5:\"count\";i:336;}s:7:\"plugins\";a:3:{s:4:\"name\";s:7:\"plugins\";s:4:\"slug\";s:7:\"plugins\";s:5:\"count\";i:332;}s:4:\"code\";a:3:{s:4:\"name\";s:4:\"code\";s:4:\"slug\";s:4:\"code\";s:5:\"count\";i:331;}s:10:\"newsletter\";a:3:{s:4:\"name\";s:10:\"newsletter\";s:4:\"slug\";s:10:\"newsletter\";s:5:\"count\";i:330;}s:4:\"list\";a:3:{s:4:\"name\";s:4:\"list\";s:4:\"slug\";s:4:\"list\";s:5:\"count\";i:328;}s:4:\"meta\";a:3:{s:4:\"name\";s:4:\"meta\";s:4:\"slug\";s:4:\"meta\";s:5:\"count\";i:325;}s:3:\"url\";a:3:{s:4:\"name\";s:3:\"url\";s:4:\"slug\";s:3:\"url\";s:5:\"count\";i:324;}s:9:\"marketing\";a:3:{s:4:\"name\";s:9:\"marketing\";s:4:\"slug\";s:9:\"marketing\";s:5:\"count\";i:321;}s:4:\"chat\";a:3:{s:4:\"name\";s:4:\"chat\";s:4:\"slug\";s:4:\"chat\";s:5:\"count\";i:319;}s:8:\"redirect\";a:3:{s:4:\"name\";s:8:\"redirect\";s:4:\"slug\";s:8:\"redirect\";s:5:\"count\";i:307;}s:15:\"payment-gateway\";a:3:{s:4:\"name\";s:15:\"payment gateway\";s:4:\"slug\";s:15:\"payment-gateway\";s:5:\"count\";i:304;}s:3:\"tag\";a:3:{s:4:\"name\";s:3:\"tag\";s:4:\"slug\";s:3:\"tag\";s:5:\"count\";i:300;}s:6:\"simple\";a:3:{s:4:\"name\";s:6:\"simple\";s:4:\"slug\";s:6:\"simple\";s:5:\"count\";i:300;}s:5:\"forms\";a:3:{s:4:\"name\";s:5:\"forms\";s:4:\"slug\";s:5:\"forms\";s:5:\"count\";i:298;}s:16:\"custom-post-type\";a:3:{s:4:\"name\";s:16:\"custom post type\";s:4:\"slug\";s:16:\"custom-post-type\";s:5:\"count\";i:297;}s:11:\"advertising\";a:3:{s:4:\"name\";s:11:\"advertising\";s:4:\"slug\";s:11:\"advertising\";s:5:\"count\";i:292;}s:7:\"adsense\";a:3:{s:4:\"name\";s:7:\"adsense\";s:4:\"slug\";s:7:\"adsense\";s:5:\"count\";i:288;}s:4:\"html\";a:3:{s:4:\"name\";s:4:\"html\";s:4:\"slug\";s:4:\"html\";s:5:\"count\";i:288;}s:6:\"author\";a:3:{s:4:\"name\";s:6:\"author\";s:4:\"slug\";s:6:\"author\";s:5:\"count\";i:286;}s:8:\"tracking\";a:3:{s:4:\"name\";s:8:\"tracking\";s:4:\"slug\";s:8:\"tracking\";s:5:\"count\";i:283;}s:8:\"lightbox\";a:3:{s:4:\"name\";s:8:\"lightbox\";s:4:\"slug\";s:8:\"lightbox\";s:5:\"count\";i:282;}s:7:\"tinymce\";a:3:{s:4:\"name\";s:7:\"tinyMCE\";s:4:\"slug\";s:7:\"tinymce\";s:5:\"count\";i:278;}s:16:\"google-analytics\";a:3:{s:4:\"name\";s:16:\"google analytics\";s:4:\"slug\";s:16:\"google-analytics\";s:5:\"count\";i:278;}s:12:\"notification\";a:3:{s:4:\"name\";s:12:\"notification\";s:4:\"slug\";s:12:\"notification\";s:5:\"count\";i:277;}}', 'no'),
-(1195, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1513055297;s:7:\"checked\";a:13:{s:19:\"akismet/akismet.php\";s:5:\"3.3.4\";s:29:\"pirate-forms/pirate-forms.php\";s:5:\"2.2.4\";s:9:\"hello.php\";s:3:\"1.6\";s:19:\"jetpack/jetpack.php\";s:3:\"5.4\";s:15:\"kirki/kirki.php\";s:6:\"3.0.15\";s:43:\"themeisle-companion/themeisle-companion.php\";s:5:\"2.1.0\";s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";s:5:\"1.6.2\";s:45:\"remove-footer-credit/remove-footer-credit.php\";s:3:\"1.0\";s:53:\"widget-importer-exporter/widget-importer-exporter.php\";s:5:\"1.5.2\";s:27:\"woocommerce/woocommerce.php\";s:5:\"3.2.1\";s:45:\"woocommerce-services/woocommerce-services.php\";s:5:\"1.8.2\";s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";s:5:\"3.2.3\";s:41:\"wordpress-importer/wordpress-importer.php\";s:5:\"0.6.3\";}s:8:\"response\";a:6:{s:29:\"pirate-forms/pirate-forms.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:26:\"w.org/plugins/pirate-forms\";s:4:\"slug\";s:12:\"pirate-forms\";s:6:\"plugin\";s:29:\"pirate-forms/pirate-forms.php\";s:11:\"new_version\";s:5:\"2.3.0\";s:3:\"url\";s:43:\"https://wordpress.org/plugins/pirate-forms/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/plugin/pirate-forms.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/pirate-forms/assets/icon-128x128.png?rev=1635118\";s:7:\"default\";s:65:\"https://ps.w.org/pirate-forms/assets/icon-128x128.png?rev=1635118\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:67:\"https://ps.w.org/pirate-forms/assets/banner-772x250.png?rev=1635118\";s:7:\"default\";s:67:\"https://ps.w.org/pirate-forms/assets/banner-772x250.png?rev=1635118\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:19:\"jetpack/jetpack.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:21:\"w.org/plugins/jetpack\";s:4:\"slug\";s:7:\"jetpack\";s:6:\"plugin\";s:19:\"jetpack/jetpack.php\";s:11:\"new_version\";s:3:\"5.6\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/jetpack/\";s:7:\"package\";s:54:\"https://downloads.wordpress.org/plugin/jetpack.5.6.zip\";s:5:\"icons\";a:4:{s:2:\"1x\";s:59:\"https://ps.w.org/jetpack/assets/icon-128x128.png?rev=969908\";s:2:\"2x\";s:59:\"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=969908\";s:3:\"svg\";s:51:\"https://ps.w.org/jetpack/assets/icon.svg?rev=969908\";s:7:\"default\";s:51:\"https://ps.w.org/jetpack/assets/icon.svg?rev=969908\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1173629\";s:2:\"1x\";s:62:\"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1173629\";s:7:\"default\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1173629\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:15:\"kirki/kirki.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:19:\"w.org/plugins/kirki\";s:4:\"slug\";s:5:\"kirki\";s:6:\"plugin\";s:15:\"kirki/kirki.php\";s:11:\"new_version\";s:6:\"3.0.19\";s:3:\"url\";s:36:\"https://wordpress.org/plugins/kirki/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/plugin/kirki.3.0.19.zip\";s:5:\"icons\";a:4:{s:2:\"1x\";s:58:\"https://ps.w.org/kirki/assets/icon-128x128.png?rev=1330852\";s:2:\"2x\";s:58:\"https://ps.w.org/kirki/assets/icon-256x256.png?rev=1330852\";s:3:\"svg\";s:50:\"https://ps.w.org/kirki/assets/icon.svg?rev=1330186\";s:7:\"default\";s:50:\"https://ps.w.org/kirki/assets/icon.svg?rev=1330186\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:61:\"https://ps.w.org/kirki/assets/banner-1544x500.png?rev=1330852\";s:2:\"1x\";s:60:\"https://ps.w.org/kirki/assets/banner-772x250.png?rev=1330852\";s:7:\"default\";s:61:\"https://ps.w.org/kirki/assets/banner-1544x500.png?rev=1330852\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.2\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:43:\"themeisle-companion/themeisle-companion.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:33:\"w.org/plugins/themeisle-companion\";s:4:\"slug\";s:19:\"themeisle-companion\";s:6:\"plugin\";s:43:\"themeisle-companion/themeisle-companion.php\";s:11:\"new_version\";s:5:\"2.2.5\";s:3:\"url\";s:50:\"https://wordpress.org/plugins/themeisle-companion/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/plugin/themeisle-companion.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:72:\"https://ps.w.org/themeisle-companion/assets/icon-128x128.png?rev=1712080\";s:7:\"default\";s:72:\"https://ps.w.org/themeisle-companion/assets/icon-128x128.png?rev=1712080\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:74:\"https://ps.w.org/themeisle-companion/assets/banner-772x250.png?rev=1714629\";s:7:\"default\";s:74:\"https://ps.w.org/themeisle-companion/assets/banner-772x250.png?rev=1714629\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:27:\"woocommerce/woocommerce.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:25:\"w.org/plugins/woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:6:\"plugin\";s:27:\"woocommerce/woocommerce.php\";s:11:\"new_version\";s:5:\"3.2.5\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/woocommerce/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce.3.2.5.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=1440831\";s:2:\"2x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831\";s:7:\"default\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184\";s:2:\"1x\";s:66:\"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=1629184\";s:7:\"default\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:45:\"woocommerce-services/woocommerce-services.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:34:\"w.org/plugins/woocommerce-services\";s:4:\"slug\";s:20:\"woocommerce-services\";s:6:\"plugin\";s:45:\"woocommerce-services/woocommerce-services.php\";s:11:\"new_version\";s:5:\"1.9.0\";s:3:\"url\";s:51:\"https://wordpress.org/plugins/woocommerce-services/\";s:7:\"package\";s:69:\"https://downloads.wordpress.org/plugin/woocommerce-services.1.9.0.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-128x128.png?rev=1586175\";s:2:\"2x\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175\";s:7:\"default\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:76:\"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183\";s:2:\"1x\";s:75:\"https://ps.w.org/woocommerce-services/assets/banner-772x250.png?rev=1598183\";s:7:\"default\";s:76:\"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:6:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907\";s:2:\"2x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";s:7:\"default\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";s:7:\"default\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";}s:11:\"banners_rtl\";a:0:{}}s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:31:\"w.org/plugins/page-scroll-to-id\";s:4:\"slug\";s:17:\"page-scroll-to-id\";s:6:\"plugin\";s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";s:11:\"new_version\";s:5:\"1.6.2\";s:3:\"url\";s:48:\"https://wordpress.org/plugins/page-scroll-to-id/\";s:7:\"package\";s:66:\"https://downloads.wordpress.org/plugin/page-scroll-to-id.1.6.2.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-128x128.png?rev=1401043\";s:2:\"2x\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-256x256.png?rev=1401043\";s:7:\"default\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-256x256.png?rev=1401043\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:73:\"https://ps.w.org/page-scroll-to-id/assets/banner-1544x500.png?rev=1587981\";s:2:\"1x\";s:72:\"https://ps.w.org/page-scroll-to-id/assets/banner-772x250.png?rev=1587981\";s:7:\"default\";s:73:\"https://ps.w.org/page-scroll-to-id/assets/banner-1544x500.png?rev=1587981\";}s:11:\"banners_rtl\";a:0:{}}s:45:\"remove-footer-credit/remove-footer-credit.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:34:\"w.org/plugins/remove-footer-credit\";s:4:\"slug\";s:20:\"remove-footer-credit\";s:6:\"plugin\";s:45:\"remove-footer-credit/remove-footer-credit.php\";s:11:\"new_version\";s:3:\"1.0\";s:3:\"url\";s:51:\"https://wordpress.org/plugins/remove-footer-credit/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/remove-footer-credit.zip\";s:5:\"icons\";a:0:{}s:7:\"banners\";a:0:{}s:11:\"banners_rtl\";a:0:{}}s:53:\"widget-importer-exporter/widget-importer-exporter.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/widget-importer-exporter\";s:4:\"slug\";s:24:\"widget-importer-exporter\";s:6:\"plugin\";s:53:\"widget-importer-exporter/widget-importer-exporter.php\";s:11:\"new_version\";s:5:\"1.5.2\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/widget-importer-exporter/\";s:7:\"package\";s:73:\"https://downloads.wordpress.org/plugin/widget-importer-exporter.1.5.2.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-128x128.jpg?rev=990577\";s:2:\"2x\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-256x256.jpg?rev=990577\";s:7:\"default\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-256x256.jpg?rev=990577\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:79:\"https://ps.w.org/widget-importer-exporter/assets/banner-1544x500.jpg?rev=775677\";s:2:\"1x\";s:78:\"https://ps.w.org/widget-importer-exporter/assets/banner-772x250.jpg?rev=741218\";s:7:\"default\";s:79:\"https://ps.w.org/widget-importer-exporter/assets/banner-1544x500.jpg?rev=775677\";}s:11:\"banners_rtl\";a:0:{}}s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:40:\"w.org/plugins/woocommerce-gateway-stripe\";s:4:\"slug\";s:26:\"woocommerce-gateway-stripe\";s:6:\"plugin\";s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";s:11:\"new_version\";s:5:\"3.2.3\";s:3:\"url\";s:57:\"https://wordpress.org/plugins/woocommerce-gateway-stripe/\";s:7:\"package\";s:75:\"https://downloads.wordpress.org/plugin/woocommerce-gateway-stripe.3.2.3.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-128x128.png?rev=1424019\";s:2:\"2x\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-256x256.png?rev=1424019\";s:7:\"default\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-256x256.png?rev=1424019\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:82:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-1544x500.png?rev=1424019\";s:2:\"1x\";s:81:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-772x250.png?rev=1424019\";s:7:\"default\";s:82:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-1544x500.png?rev=1424019\";}s:11:\"banners_rtl\";a:0:{}}s:41:\"wordpress-importer/wordpress-importer.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:32:\"w.org/plugins/wordpress-importer\";s:4:\"slug\";s:18:\"wordpress-importer\";s:6:\"plugin\";s:41:\"wordpress-importer/wordpress-importer.php\";s:11:\"new_version\";s:5:\"0.6.3\";s:3:\"url\";s:49:\"https://wordpress.org/plugins/wordpress-importer/\";s:7:\"package\";s:67:\"https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip\";s:5:\"icons\";a:0:{}s:7:\"banners\";a:2:{s:2:\"1x\";s:72:\"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654\";s:7:\"default\";s:72:\"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(1195, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1513055297;s:7:\"checked\";a:13:{s:19:\"akismet/akismet.php\";s:5:\"3.3.4\";s:29:\"pirate-forms/pirate-forms.php\";s:5:\"2.2.4\";s:9:\"hello.php\";s:3:\"1.6\";s:19:\"jetpack/jetpack.php\";s:3:\"5.4\";s:15:\"kirki/kirki.php\";s:6:\"3.0.15\";s:43:\"themeisle-companion/themeisle-companion.php\";s:5:\"2.1.0\";s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";s:5:\"1.6.2\";s:45:\"remove-footer-credit/remove-footer-credit.php\";s:3:\"1.0\";s:53:\"widget-importer-exporter/widget-importer-exporter.php\";s:5:\"1.5.2\";s:27:\"woocommerce/woocommerce.php\";s:5:\"3.2.1\";s:45:\"woocommerce-services/woocommerce-services.php\";s:5:\"1.8.2\";s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";s:5:\"3.2.3\";s:41:\"wordpress-importer/wordpress-importer.php\";s:5:\"0.6.3\";}s:8:\"response\";a:7:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.0.1\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.0.1.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:7:\"default\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";s:7:\"default\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:29:\"pirate-forms/pirate-forms.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:26:\"w.org/plugins/pirate-forms\";s:4:\"slug\";s:12:\"pirate-forms\";s:6:\"plugin\";s:29:\"pirate-forms/pirate-forms.php\";s:11:\"new_version\";s:5:\"2.3.0\";s:3:\"url\";s:43:\"https://wordpress.org/plugins/pirate-forms/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/plugin/pirate-forms.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/pirate-forms/assets/icon-128x128.png?rev=1635118\";s:7:\"default\";s:65:\"https://ps.w.org/pirate-forms/assets/icon-128x128.png?rev=1635118\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:67:\"https://ps.w.org/pirate-forms/assets/banner-772x250.png?rev=1635118\";s:7:\"default\";s:67:\"https://ps.w.org/pirate-forms/assets/banner-772x250.png?rev=1635118\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:19:\"jetpack/jetpack.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:21:\"w.org/plugins/jetpack\";s:4:\"slug\";s:7:\"jetpack\";s:6:\"plugin\";s:19:\"jetpack/jetpack.php\";s:11:\"new_version\";s:3:\"5.6\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/jetpack/\";s:7:\"package\";s:54:\"https://downloads.wordpress.org/plugin/jetpack.5.6.zip\";s:5:\"icons\";a:4:{s:2:\"1x\";s:59:\"https://ps.w.org/jetpack/assets/icon-128x128.png?rev=969908\";s:2:\"2x\";s:59:\"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=969908\";s:3:\"svg\";s:51:\"https://ps.w.org/jetpack/assets/icon.svg?rev=969908\";s:7:\"default\";s:51:\"https://ps.w.org/jetpack/assets/icon.svg?rev=969908\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1173629\";s:2:\"1x\";s:62:\"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1173629\";s:7:\"default\";s:63:\"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1173629\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:15:\"kirki/kirki.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:19:\"w.org/plugins/kirki\";s:4:\"slug\";s:5:\"kirki\";s:6:\"plugin\";s:15:\"kirki/kirki.php\";s:11:\"new_version\";s:6:\"3.0.19\";s:3:\"url\";s:36:\"https://wordpress.org/plugins/kirki/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/plugin/kirki.3.0.19.zip\";s:5:\"icons\";a:4:{s:2:\"1x\";s:58:\"https://ps.w.org/kirki/assets/icon-128x128.png?rev=1330852\";s:2:\"2x\";s:58:\"https://ps.w.org/kirki/assets/icon-256x256.png?rev=1330852\";s:3:\"svg\";s:50:\"https://ps.w.org/kirki/assets/icon.svg?rev=1330186\";s:7:\"default\";s:50:\"https://ps.w.org/kirki/assets/icon.svg?rev=1330186\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:61:\"https://ps.w.org/kirki/assets/banner-1544x500.png?rev=1330852\";s:2:\"1x\";s:60:\"https://ps.w.org/kirki/assets/banner-772x250.png?rev=1330852\";s:7:\"default\";s:61:\"https://ps.w.org/kirki/assets/banner-1544x500.png?rev=1330852\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.2\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:43:\"themeisle-companion/themeisle-companion.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:33:\"w.org/plugins/themeisle-companion\";s:4:\"slug\";s:19:\"themeisle-companion\";s:6:\"plugin\";s:43:\"themeisle-companion/themeisle-companion.php\";s:11:\"new_version\";s:5:\"2.2.5\";s:3:\"url\";s:50:\"https://wordpress.org/plugins/themeisle-companion/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/plugin/themeisle-companion.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:72:\"https://ps.w.org/themeisle-companion/assets/icon-128x128.png?rev=1712080\";s:7:\"default\";s:72:\"https://ps.w.org/themeisle-companion/assets/icon-128x128.png?rev=1712080\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:74:\"https://ps.w.org/themeisle-companion/assets/banner-772x250.png?rev=1714629\";s:7:\"default\";s:74:\"https://ps.w.org/themeisle-companion/assets/banner-772x250.png?rev=1714629\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:27:\"woocommerce/woocommerce.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:25:\"w.org/plugins/woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:6:\"plugin\";s:27:\"woocommerce/woocommerce.php\";s:11:\"new_version\";s:5:\"3.2.5\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/woocommerce/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce.3.2.5.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=1440831\";s:2:\"2x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831\";s:7:\"default\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184\";s:2:\"1x\";s:66:\"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=1629184\";s:7:\"default\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:45:\"woocommerce-services/woocommerce-services.php\";O:8:\"stdClass\":11:{s:2:\"id\";s:34:\"w.org/plugins/woocommerce-services\";s:4:\"slug\";s:20:\"woocommerce-services\";s:6:\"plugin\";s:45:\"woocommerce-services/woocommerce-services.php\";s:11:\"new_version\";s:5:\"1.9.0\";s:3:\"url\";s:51:\"https://wordpress.org/plugins/woocommerce-services/\";s:7:\"package\";s:69:\"https://downloads.wordpress.org/plugin/woocommerce-services.1.9.0.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-128x128.png?rev=1586175\";s:2:\"2x\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175\";s:7:\"default\";s:73:\"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:76:\"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183\";s:2:\"1x\";s:75:\"https://ps.w.org/woocommerce-services/assets/banner-772x250.png?rev=1598183\";s:7:\"default\";s:76:\"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"4.9.1\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:6:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907\";s:2:\"2x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";s:7:\"default\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";}s:7:\"banners\";a:2:{s:2:\"1x\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";s:7:\"default\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";}s:11:\"banners_rtl\";a:0:{}}s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:31:\"w.org/plugins/page-scroll-to-id\";s:4:\"slug\";s:17:\"page-scroll-to-id\";s:6:\"plugin\";s:42:\"page-scroll-to-id/malihu-pagescroll2id.php\";s:11:\"new_version\";s:5:\"1.6.2\";s:3:\"url\";s:48:\"https://wordpress.org/plugins/page-scroll-to-id/\";s:7:\"package\";s:66:\"https://downloads.wordpress.org/plugin/page-scroll-to-id.1.6.2.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-128x128.png?rev=1401043\";s:2:\"2x\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-256x256.png?rev=1401043\";s:7:\"default\";s:70:\"https://ps.w.org/page-scroll-to-id/assets/icon-256x256.png?rev=1401043\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:73:\"https://ps.w.org/page-scroll-to-id/assets/banner-1544x500.png?rev=1587981\";s:2:\"1x\";s:72:\"https://ps.w.org/page-scroll-to-id/assets/banner-772x250.png?rev=1587981\";s:7:\"default\";s:73:\"https://ps.w.org/page-scroll-to-id/assets/banner-1544x500.png?rev=1587981\";}s:11:\"banners_rtl\";a:0:{}}s:45:\"remove-footer-credit/remove-footer-credit.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:34:\"w.org/plugins/remove-footer-credit\";s:4:\"slug\";s:20:\"remove-footer-credit\";s:6:\"plugin\";s:45:\"remove-footer-credit/remove-footer-credit.php\";s:11:\"new_version\";s:3:\"1.0\";s:3:\"url\";s:51:\"https://wordpress.org/plugins/remove-footer-credit/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/remove-footer-credit.zip\";s:5:\"icons\";a:0:{}s:7:\"banners\";a:0:{}s:11:\"banners_rtl\";a:0:{}}s:53:\"widget-importer-exporter/widget-importer-exporter.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/widget-importer-exporter\";s:4:\"slug\";s:24:\"widget-importer-exporter\";s:6:\"plugin\";s:53:\"widget-importer-exporter/widget-importer-exporter.php\";s:11:\"new_version\";s:5:\"1.5.2\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/widget-importer-exporter/\";s:7:\"package\";s:73:\"https://downloads.wordpress.org/plugin/widget-importer-exporter.1.5.2.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-128x128.jpg?rev=990577\";s:2:\"2x\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-256x256.jpg?rev=990577\";s:7:\"default\";s:76:\"https://ps.w.org/widget-importer-exporter/assets/icon-256x256.jpg?rev=990577\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:79:\"https://ps.w.org/widget-importer-exporter/assets/banner-1544x500.jpg?rev=775677\";s:2:\"1x\";s:78:\"https://ps.w.org/widget-importer-exporter/assets/banner-772x250.jpg?rev=741218\";s:7:\"default\";s:79:\"https://ps.w.org/widget-importer-exporter/assets/banner-1544x500.jpg?rev=775677\";}s:11:\"banners_rtl\";a:0:{}}s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:40:\"w.org/plugins/woocommerce-gateway-stripe\";s:4:\"slug\";s:26:\"woocommerce-gateway-stripe\";s:6:\"plugin\";s:57:\"woocommerce-gateway-stripe/woocommerce-gateway-stripe.php\";s:11:\"new_version\";s:5:\"3.2.3\";s:3:\"url\";s:57:\"https://wordpress.org/plugins/woocommerce-gateway-stripe/\";s:7:\"package\";s:75:\"https://downloads.wordpress.org/plugin/woocommerce-gateway-stripe.3.2.3.zip\";s:5:\"icons\";a:3:{s:2:\"1x\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-128x128.png?rev=1424019\";s:2:\"2x\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-256x256.png?rev=1424019\";s:7:\"default\";s:79:\"https://ps.w.org/woocommerce-gateway-stripe/assets/icon-256x256.png?rev=1424019\";}s:7:\"banners\";a:3:{s:2:\"2x\";s:82:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-1544x500.png?rev=1424019\";s:2:\"1x\";s:81:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-772x250.png?rev=1424019\";s:7:\"default\";s:82:\"https://ps.w.org/woocommerce-gateway-stripe/assets/banner-1544x500.png?rev=1424019\";}s:11:\"banners_rtl\";a:0:{}}s:41:\"wordpress-importer/wordpress-importer.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:32:\"w.org/plugins/wordpress-importer\";s:4:\"slug\";s:18:\"wordpress-importer\";s:6:\"plugin\";s:41:\"wordpress-importer/wordpress-importer.php\";s:11:\"new_version\";s:5:\"0.6.3\";s:3:\"url\";s:49:\"https://wordpress.org/plugins/wordpress-importer/\";s:7:\"package\";s:67:\"https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip\";s:5:\"icons\";a:0:{}s:7:\"banners\";a:2:{s:2:\"1x\";s:72:\"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654\";s:7:\"default\";s:72:\"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
 (1196, '_transient_timeout_wc_term_counts', '1515647459', 'no'),
-(1197, '_transient_wc_term_counts', 'a:2:{i:18;s:1:\"1\";i:17;s:1:\"1\";}', 'no'),
-(1198, '_transient_timeout_jetpack_idc_allowed', '1513059303', 'no'),
-(1199, '_transient_jetpack_idc_allowed', '1', 'no');
+(1197, '_transient_wc_term_counts', 'a:2:{i:18;s:1:\"1\";i:17;s:1:\"1\";}', 'no');
 
 -- --------------------------------------------------------
 
@@ -1051,7 +1053,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (41, 1, '2017-11-14 01:40:04', '2017-11-14 01:40:04', 'Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied.\r\n\r\nOur products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.\r\n\r\n<strong>Sensor Products Inc.</strong>\r\n300 Madison Avenue, Madison NJ, 07940 USA\r\nPhone: 1.973.884.1755\r\nEmail: <a href=\"mailto:info@sensorexpert.com?subject=Information%20Request%20-%20(http://sensorexpert.com/aboutus.php)\">info@sensorexpert.com</a>', 'Contact Us', '', 'inherit', 'closed', 'closed', '', '39-revision-v1', '', '', '2017-11-14 01:40:04', '2017-11-14 01:40:04', '', 39, 'http://localhost:90/wordpress/2017/11/14/39-revision-v1/', 0, 'revision', '', 0),
 (42, 1, '2017-11-14 01:40:15', '2017-11-14 01:40:15', 'Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied.\r\n\r\nOur products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.\r\n\r\n<strong>Sensor Products Inc.</strong>\r\n300 Madison Avenue, Madison NJ, 07940 USA\r\nPhone: 1.973.884.1755\r\nEmail: <a href=\"mailto:info@sensorexpert.com?subject=Information%20Request%20-%20(http://sensorexpert.com/aboutus.php)\">info@sensorexpert.com</a>', 'About Us', '', 'inherit', 'closed', 'closed', '', '39-revision-v1', '', '', '2017-11-14 01:40:15', '2017-11-14 01:40:15', '', 39, 'http://localhost:90/wordpress/2017/11/14/39-revision-v1/', 0, 'revision', '', 0),
 (43, 1, '2017-11-14 01:45:58', '2017-11-14 01:45:58', '{\n    \"tyche::tyche_slider_bg\": {\n        \"value\": \"%7B%22image_bg%22:%22http://localhost:90/wordpress/wp-content/themes/tyche/assets/images/hero.jpg%22,%22cta_text%22:%222016%22,%22cta_subtext%22:%22Autumn%20Collection%22,%22button_one_text%22:%22Shop%20Now%22,%22button_two_text%22:%22Learn%20More%22,%22button_one_url%22:%22https://colorlib.com%22,%22button_two_url%22:%22https://colorlib.com%22%7D\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"blogdescription\": {\n        \"value\": \"The Force In Surface Contact Pressure\",\n        \"type\": \"option\",\n        \"user_id\": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '891144bc-ebb1-4ded-b6ba-1953a76d4efa', '', '', '2017-11-14 01:45:58', '2017-11-14 01:45:58', '', 0, 'http://localhost:90/wordpress/?p=43', 0, 'customize_changeset', '', 0),
-(44, 1, '2017-11-14 02:58:59', '2017-11-14 02:58:59', '<p><span>Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied. </span><br /><br /><span>Our products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.</span></p>', 'home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2017-12-12 05:17:43', '2017-12-12 05:17:43', '', 0, 'http://localhost:90/wordpress/?page_id=44', 0, 'page', '', 0),
+(44, 1, '2017-11-14 02:58:59', '2017-11-14 02:58:59', '<p><span>Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied. </span><br /><br /><span>Our products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.</span></p>', 'home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2017-12-12 05:08:41', '2017-12-12 05:08:41', '', 0, 'http://localhost:90/wordpress/?page_id=44', 0, 'page', '', 0),
 (45, 1, '2017-11-14 02:58:59', '2017-11-14 02:58:59', '{\n    \"show_on_front\": {\n        \"value\": \"page\",\n        \"type\": \"option\",\n        \"user_id\": 1\n    },\n    \"page_on_front\": {\n        \"value\": \"44\",\n        \"type\": \"option\",\n        \"user_id\": 1\n    },\n    \"nav_menus_created_posts\": {\n        \"value\": [\n            44\n        ],\n        \"type\": \"option\",\n        \"user_id\": 1\n    },\n    \"nav_menu[-1106355820110202900]\": {\n        \"value\": {\n            \"name\": \"Shop\",\n            \"description\": \"\",\n            \"parent\": 0,\n            \"auto_add\": false\n        },\n        \"type\": \"nav_menu\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_page_editor\": {\n        \"value\": \"<p><span>Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied. </span><br /><br /><span>Our products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.</span></p>\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::custom_logo\": {\n        \"value\": 47,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"blogname\": {\n        \"value\": \"Sensor Expert\",\n        \"type\": \"option\",\n        \"user_id\": 1\n    },\n    \"blogdescription\": {\n        \"value\": \"Sensor Expert\",\n        \"type\": \"option\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_big_title_text\": {\n        \"value\": \"The Force In Surface Contact Pressure\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_big_title_button_text\": {\n        \"value\": \"Contact us\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_slider_alignment\": {\n        \"value\": \"left\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_headings_font\": {\n        \"value\": \"Playfair Display SC\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_font_subsets\": {\n        \"value\": [\n            \"cyrillic\"\n        ],\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_body_font\": {\n        \"value\": \"Aref Ruqaa\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '40f48547-4acf-4ae6-a8b3-0cf560ba0337', '', '', '2017-11-14 02:58:59', '2017-11-14 02:58:59', '', 0, 'http://localhost:90/wordpress/?p=45', 0, 'customize_changeset', '', 0),
 (46, 1, '2017-11-14 02:56:14', '2017-11-14 02:56:14', '', 'logo', '', 'inherit', 'open', 'closed', '', 'logo', '', '', '2017-11-14 02:56:14', '2017-11-14 02:56:14', '', 0, 'http://localhost:90/wordpress/wp-content/uploads/2017/11/logo-1.jpg', 0, 'attachment', 'image/jpeg', 0),
 (47, 1, '2017-11-14 02:56:21', '2017-11-14 02:56:21', 'http://localhost:90/wordpress/wp-content/uploads/2017/11/cropped-logo-1-1.jpg', 'cropped-logo-1-1.jpg', '', 'inherit', 'open', 'closed', '', 'cropped-logo-1-1-jpg', '', '', '2017-11-14 02:56:21', '2017-11-14 02:56:21', '', 0, 'http://localhost:90/wordpress/wp-content/uploads/2017/11/cropped-logo-1-1.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -1113,65 +1115,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (111, 1, '2017-12-12 04:51:09', '2017-12-12 04:51:09', '{\n    \"hestia::hestia_features_subtitle\": {\n        \"value\": \"Illuminating What\'s Occurring Between Contacting Surfaces Since 1990.\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_features_content\": {\n        \"value\": \"[{\\\"icon_value\\\":\\\"fa-wechat\\\",\\\"color\\\":\\\"#e91e63\\\",\\\"text\\\":\\\"The most unique quality of Thermoscale\\u00ae is that is goes where no other IR camera or temperature gauge can ever go - on the surface of the heated object and in between two contacting surfaces!\\\",\\\"link\\\":\\\"#\\\",\\\"text2\\\":\\\"undefined\\\",\\\"title\\\":\\\"Responsive\\\",\\\"subtitle\\\":\\\"undefined\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"social-repeater-5a2af56291f35\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"icon_value\\\":\\\"fa-check\\\",\\\"color\\\":\\\"#00bcd4\\\",\\\"text\\\":\\\"Introducing the newest addition to the Fujifilm Prescale line. Measure surface pressure down to an unbelievable 0.9 PSI.\\\",\\\"link\\\":\\\"#\\\",\\\"text2\\\":\\\"undefined\\\",\\\"title\\\":\\\"Quality\\\",\\\"subtitle\\\":\\\"undefined\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"social-repeater-5a2af5622a3f0\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"icon_value\\\":\\\"fa-support\\\",\\\"color\\\":\\\"#4caf50\\\",\\\"text\\\":\\\"Sensor Products has highly-trained, responsive sales representatives in 30 countries.\\\",\\\"link\\\":\\\"#\\\",\\\"text2\\\":\\\"undefined\\\",\\\"title\\\":\\\"Support\\\",\\\"subtitle\\\":\\\"undefined\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"social-repeater-5a2af56267b9f\\\",\\\"shortcode\\\":\\\"undefined\\\"}]\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_testimonials_content\": {\n        \"value\": \"[{\\\"text\\\":\\\"&quot;A quote of satisfaction goes here!&quot;\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40d56\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"text\\\":\\\"&quot;A quote of satisfaction goes here!&quot;\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40d66\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"text\\\":\\\"&quot;A quote of satisfaction goes here!&quot;\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"undefined\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40d76\\\",\\\"shortcode\\\":\\\"undefined\\\"}]\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_team_content\": {\n        \"value\": \"[{\\\"icon_value\\\":\\\"fa-facebook\\\",\\\"text\\\":\\\"Description about person.\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"Position\\\",\\\"social_repeater\\\":\\\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb908674e06&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530ft&quot;,&quot;link&quot;:&quot;plus.google.com&quot;,&quot;icon&quot;:&quot;fa-google-plus&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9148530fc&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9150e1e89&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40c56\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"icon_value\\\":\\\"fa-facebook\\\",\\\"text\\\":\\\"Description about person.\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9155a1072&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab683&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9160ab484&quot;,&quot;link&quot;:&quot;pinterest.com&quot;,&quot;icon&quot;:&quot;fa-pinterest&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb916ddffc9&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40c66\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"icon_value\\\":\\\"fa-facebook\\\",\\\"text\\\":\\\"Description about person.\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb917e4c69e&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb91830825c&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2e&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb918d65f2x&quot;,&quot;link&quot;:&quot;dribbble.com&quot;,&quot;icon&quot;:&quot;fa-dribbble&quot;}]\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40c76\\\",\\\"shortcode\\\":\\\"undefined\\\"},{\\\"icon_value\\\":\\\"fa-github-square\\\",\\\"text\\\":\\\"Description about person.\\\",\\\"link\\\":\\\"\\\",\\\"text2\\\":\\\"undefined\\\",\\\"image_url\\\":\\\"http://localhost:90/wordpress/wp-content/uploads/2017/12/538642-user_512x512-300x300.png\\\",\\\"title\\\":\\\"FirstName LastName\\\",\\\"subtitle\\\":\\\"POSITION\\\",\\\"social_repeater\\\":\\\"[{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcg5&quot;,&quot;link&quot;:&quot;github.com&quot;,&quot;icon&quot;:&quot;fa-github-square&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb925cedcb2&quot;,&quot;link&quot;:&quot;facebook.com&quot;,&quot;icon&quot;:&quot;fa-facebook&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb92615f030&quot;,&quot;link&quot;:&quot;twitter.com&quot;,&quot;icon&quot;:&quot;fa-twitter&quot;},{&quot;id&quot;:&quot;customizer-repeater-social-repeater-57fb9266c223a&quot;,&quot;link&quot;:&quot;linkedin.com&quot;,&quot;icon&quot;:&quot;fa-linkedin&quot;}]\\\",\\\"id\\\":\\\"customizer_repeater_56d7ea7f40c86\\\",\\\"shortcode\\\":\\\"undefined\\\"}]\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_shop_subtitle\": {\n        \"value\": \"Engineers can simultaneously measure multiple forces applied by an automobile occupant and collect the data in real time.\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_contact_subtitle\": {\n        \"value\": \"\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::hestia_contact_content_new\": {\n        \"value\": \"<div class=\\\"hestia-info info info-horizontal\\\" id=\\\"contact\\\"><div class=\\\"icon icon-primary\\\"><i class=\\\"fa fa-map-marker\\\"></i></div><div class=\\\"description\\\"><h4 class=\\\"info-title\\\">Find us at the office</h4><p>300 Madison Ave. Madison, NJ 07940 USA</p></div></div><div class=\\\"hestia-info info info-horizontal\\\"><div class=\\\"icon icon-primary\\\"><i class=\\\"fa fa-mobile\\\"></i></div><div class=\\\"description\\\"><h4 class=\\\"info-title\\\">Give us a ring</h4><p>Franck Koestel<br /><span>+1-973-884-1755</span></p></div></div>\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'c276433a-6f74-4d22-9a57-fbab3a142d4b', '', '', '2017-12-12 04:51:09', '2017-12-12 04:51:09', '', 0, 'http://localhost:90/wordpress/?p=111', 0, 'customize_changeset', '', 0),
 (112, 1, '2017-12-12 04:53:05', '2017-12-12 04:53:05', '{\n    \"hestia::nav_menu_locations[footer]\": {\n        \"value\": 15,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"hestia::nav_menu_locations[top-bar-menu]\": {\n        \"value\": 0,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '52fbd1af-a59c-45bd-a7e7-1bd772e9c422', '', '', '2017-12-12 04:53:05', '2017-12-12 04:53:05', '', 0, 'http://localhost:90/wordpress/?p=112', 0, 'customize_changeset', '', 0),
 (113, 1, '2017-12-12 04:54:58', '0000-00-00 00:00:00', '{\n    \"hestia::hestia_page_editor\": {\n        \"value\": \"<p>Our company is a world leader in the niche field of tactile surface pressure and force sensors. Established in 1990, our privately-held firm has over 25 talented professionals. We distribute a tactile surface pressure indicating film that reveals pressure distribution and magnitude between any two contacting or impacting surfaces. When placed between two contacting or mating surfaces, this thin plastic film instantaneously and permanently captures the pressure profile, by virtue of a color change. Similar in philosophy to Litmus paper, the color the film turns is directly proportional to the amount of force applied.</p><p>Our products are analytical tools used in the manufacturing and R&amp;D processes by engineers and technicians. We offer customized and off-the-shelf systems which are installed within all of the Fortune 500 industrial companies as well as thousands of smaller manufacturing firms. We have representatives in 15 countries.</p>\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', 'c27e73f5-adc6-45b9-9a31-8bd53637168d', '', '', '2017-12-12 04:54:58', '0000-00-00 00:00:00', '', 0, 'http://localhost:90/wordpress/?p=113', 0, 'customize_changeset', '', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `wp_termmeta`
---
-
-CREATE TABLE `wp_termmeta` (
-  `meta_id` bigint(20) UNSIGNED NOT NULL,
-  `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Dumping data for table `wp_termmeta`
---
-
-INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
-(1, 17, 'order', '0'),
-(2, 18, 'order', '0'),
-(3, 17, 'product_count_product_cat', '1'),
-(4, 18, 'product_count_product_cat', '1');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `wp_terms`
---
-
-CREATE TABLE `wp_terms` (
-  `term_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `term_group` bigint(10) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Dumping data for table `wp_terms`
---
-
-INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Uncategorized', 'uncategorized', 0),
-(2, 'simple', 'simple', 0),
-(3, 'grouped', 'grouped', 0),
-(4, 'variable', 'variable', 0),
-(5, 'external', 'external', 0),
-(6, 'exclude-from-search', 'exclude-from-search', 0),
-(7, 'exclude-from-catalog', 'exclude-from-catalog', 0),
-(8, 'featured', 'featured', 0),
-(9, 'outofstock', 'outofstock', 0),
-(10, 'rated-1', 'rated-1', 0),
-(11, 'rated-2', 'rated-2', 0),
-(12, 'rated-3', 'rated-3', 0),
-(13, 'rated-4', 'rated-4', 0),
-(14, 'rated-5', 'rated-5', 0),
-(15, 'Main Menu', 'main-menu', 0),
-(17, 'Request Demo Only', 'request-demo-only', 0),
-(18, 'Order Now', 'order-now', 0);
 
 -- --------------------------------------------------------
 
@@ -1254,6 +1197,65 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (15, 15, 'nav_menu', '', 0, 7),
 (17, 17, 'product_cat', '', 0, 1),
 (18, 18, 'product_cat', '', 0, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_termmeta`
+--
+
+CREATE TABLE `wp_termmeta` (
+  `meta_id` bigint(20) UNSIGNED NOT NULL,
+  `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `wp_termmeta`
+--
+
+INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
+(1, 17, 'order', '0'),
+(2, 18, 'order', '0'),
+(3, 17, 'product_count_product_cat', '1'),
+(4, 18, 'product_count_product_cat', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_terms`
+--
+
+CREATE TABLE `wp_terms` (
+  `term_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `term_group` bigint(10) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `wp_terms`
+--
+
+INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
+(1, 'Uncategorized', 'uncategorized', 0),
+(2, 'simple', 'simple', 0),
+(3, 'grouped', 'grouped', 0),
+(4, 'variable', 'variable', 0),
+(5, 'external', 'external', 0),
+(6, 'exclude-from-search', 'exclude-from-search', 0),
+(7, 'exclude-from-catalog', 'exclude-from-catalog', 0),
+(8, 'featured', 'featured', 0),
+(9, 'outofstock', 'outofstock', 0),
+(10, 'rated-1', 'rated-1', 0),
+(11, 'rated-2', 'rated-2', 0),
+(12, 'rated-3', 'rated-3', 0),
+(13, 'rated-4', 'rated-4', 0),
+(14, 'rated-5', 'rated-5', 0),
+(15, 'Main Menu', 'main-menu', 0),
+(17, 'Request Demo Only', 'request-demo-only', 0),
+(18, 'Order Now', 'order-now', 0);
 
 -- --------------------------------------------------------
 
@@ -1465,27 +1467,7 @@ CREATE TABLE `wp_woocommerce_sessions` (
 --
 
 INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
-(36, '1', 'a:1:{s:8:\"customer\";s:666:\"a:25:{s:2:\"id\";i:1;s:8:\"postcode\";s:0:\"\";s:4:\"city\";s:0:\"\";s:9:\"address_1\";s:0:\"\";s:7:\"address\";s:0:\"\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:0:\"\";s:7:\"country\";s:2:\"US\";s:17:\"shipping_postcode\";s:0:\"\";s:13:\"shipping_city\";s:0:\"\";s:18:\"shipping_address_1\";s:0:\"\";s:16:\"shipping_address\";s:0:\"\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:0:\"\";s:16:\"shipping_country\";s:2:\"US\";s:13:\"is_vat_exempt\";b:0;s:19:\"calculated_shipping\";b:0;s:10:\"first_name\";s:0:\"\";s:9:\"last_name\";s:0:\"\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:0:\"\";s:5:\"email\";s:16:\"mhassan@drew.edu\";s:19:\"shipping_first_name\";s:0:\"\";s:18:\"shipping_last_name\";s:0:\"\";s:16:\"shipping_company\";s:0:\"\";}\";}', 1513228673),
-(39, '255018c5e927b4242ab1a88418b4163a', 'a:8:{s:4:\"cart\";s:6:\"a:0:{}\";s:11:\"cart_totals\";s:367:\"a:15:{s:8:\"subtotal\";i:0;s:12:\"subtotal_tax\";i:0;s:14:\"shipping_total\";i:0;s:12:\"shipping_tax\";i:0;s:14:\"shipping_taxes\";a:0:{}s:14:\"discount_total\";i:0;s:12:\"discount_tax\";i:0;s:19:\"cart_contents_total\";i:0;s:17:\"cart_contents_tax\";i:0;s:19:\"cart_contents_taxes\";a:0:{}s:9:\"fee_total\";i:0;s:7:\"fee_tax\";i:0;s:9:\"fee_taxes\";a:0:{}s:5:\"total\";i:0;s:9:\"total_tax\";i:0;}\";s:15:\"applied_coupons\";s:6:\"a:0:{}\";s:22:\"coupon_discount_totals\";s:6:\"a:0:{}\";s:26:\"coupon_discount_tax_totals\";s:6:\"a:0:{}\";s:21:\"removed_cart_contents\";s:354:\"a:1:{s:32:\"70efdf2ec9b086079795c442636b55fb\";a:10:{s:3:\"key\";s:32:\"70efdf2ec9b086079795c442636b55fb\";s:10:\"product_id\";i:17;s:12:\"variation_id\";i:0;s:9:\"variation\";a:0:{}s:8:\"quantity\";i:1;s:13:\"line_tax_data\";a:2:{s:8:\"subtotal\";a:0:{}s:5:\"total\";a:0:{}}s:13:\"line_subtotal\";i:70;s:17:\"line_subtotal_tax\";i:0;s:10:\"line_total\";i:70;s:8:\"line_tax\";i:0;}}\";s:10:\"wc_notices\";N;s:8:\"customer\";s:649:\"a:25:{s:2:\"id\";i:0;s:8:\"postcode\";s:0:\"\";s:4:\"city\";s:0:\"\";s:9:\"address_1\";s:0:\"\";s:7:\"address\";s:0:\"\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:0:\"\";s:7:\"country\";s:2:\"US\";s:17:\"shipping_postcode\";s:0:\"\";s:13:\"shipping_city\";s:0:\"\";s:18:\"shipping_address_1\";s:0:\"\";s:16:\"shipping_address\";s:0:\"\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:0:\"\";s:16:\"shipping_country\";s:2:\"US\";s:13:\"is_vat_exempt\";b:0;s:19:\"calculated_shipping\";b:0;s:10:\"first_name\";s:0:\"\";s:9:\"last_name\";s:0:\"\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:0:\"\";s:5:\"email\";s:0:\"\";s:19:\"shipping_first_name\";s:0:\"\";s:18:\"shipping_last_name\";s:0:\"\";s:16:\"shipping_company\";s:0:\"\";}\";}', 1513228767);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `wp_woocommerce_shipping_zones`
---
-
-CREATE TABLE `wp_woocommerce_shipping_zones` (
-  `zone_id` bigint(20) UNSIGNED NOT NULL,
-  `zone_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `zone_order` bigint(20) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Dumping data for table `wp_woocommerce_shipping_zones`
---
-
-INSERT INTO `wp_woocommerce_shipping_zones` (`zone_id`, `zone_name`, `zone_order`) VALUES
-(1, 'United States (US)', 0);
+(34, '1', 'a:1:{s:8:\"customer\";s:666:\"a:25:{s:2:\"id\";i:1;s:8:\"postcode\";s:0:\"\";s:4:\"city\";s:0:\"\";s:9:\"address_1\";s:0:\"\";s:7:\"address\";s:0:\"\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:0:\"\";s:7:\"country\";s:2:\"US\";s:17:\"shipping_postcode\";s:0:\"\";s:13:\"shipping_city\";s:0:\"\";s:18:\"shipping_address_1\";s:0:\"\";s:16:\"shipping_address\";s:0:\"\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:0:\"\";s:16:\"shipping_country\";s:2:\"US\";s:13:\"is_vat_exempt\";b:0;s:19:\"calculated_shipping\";b:0;s:10:\"first_name\";s:0:\"\";s:9:\"last_name\";s:0:\"\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:0:\"\";s:5:\"email\";s:16:\"mhassan@drew.edu\";s:19:\"shipping_first_name\";s:0:\"\";s:18:\"shipping_last_name\";s:0:\"\";s:16:\"shipping_company\";s:0:\"\";}\";}', 1513228223);
 
 -- --------------------------------------------------------
 
@@ -1524,6 +1506,38 @@ CREATE TABLE `wp_woocommerce_shipping_zone_methods` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `wp_woocommerce_shipping_zones`
+--
+
+CREATE TABLE `wp_woocommerce_shipping_zones` (
+  `zone_id` bigint(20) UNSIGNED NOT NULL,
+  `zone_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `zone_order` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `wp_woocommerce_shipping_zones`
+--
+
+INSERT INTO `wp_woocommerce_shipping_zones` (`zone_id`, `zone_name`, `zone_order`) VALUES
+(1, 'United States (US)', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_woocommerce_tax_rate_locations`
+--
+
+CREATE TABLE `wp_woocommerce_tax_rate_locations` (
+  `location_id` bigint(20) UNSIGNED NOT NULL,
+  `location_code` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `tax_rate_id` bigint(20) UNSIGNED NOT NULL,
+  `location_type` varchar(40) COLLATE utf8mb4_unicode_520_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `wp_woocommerce_tax_rates`
 --
 
@@ -1538,19 +1552,6 @@ CREATE TABLE `wp_woocommerce_tax_rates` (
   `tax_rate_shipping` int(1) NOT NULL DEFAULT '1',
   `tax_rate_order` bigint(20) UNSIGNED NOT NULL,
   `tax_rate_class` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `wp_woocommerce_tax_rate_locations`
---
-
-CREATE TABLE `wp_woocommerce_tax_rate_locations` (
-  `location_id` bigint(20) UNSIGNED NOT NULL,
-  `location_code` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `tax_rate_id` bigint(20) UNSIGNED NOT NULL,
-  `location_type` varchar(40) COLLATE utf8mb4_unicode_520_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -1610,6 +1611,21 @@ ALTER TABLE `wp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
+-- Indexes for table `wp_term_relationships`
+--
+ALTER TABLE `wp_term_relationships`
+  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
+  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
+
+--
+-- Indexes for table `wp_term_taxonomy`
+--
+ALTER TABLE `wp_term_taxonomy`
+  ADD PRIMARY KEY (`term_taxonomy_id`),
+  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
+  ADD KEY `taxonomy` (`taxonomy`);
+
+--
 -- Indexes for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
@@ -1624,21 +1640,6 @@ ALTER TABLE `wp_terms`
   ADD PRIMARY KEY (`term_id`),
   ADD KEY `slug` (`slug`(191)),
   ADD KEY `name` (`name`(191));
-
---
--- Indexes for table `wp_term_relationships`
---
-ALTER TABLE `wp_term_relationships`
-  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
-  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
-
---
--- Indexes for table `wp_term_taxonomy`
---
-ALTER TABLE `wp_term_taxonomy`
-  ADD PRIMARY KEY (`term_taxonomy_id`),
-  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
-  ADD KEY `taxonomy` (`taxonomy`);
 
 --
 -- Indexes for table `wp_usermeta`
@@ -1726,12 +1727,6 @@ ALTER TABLE `wp_woocommerce_sessions`
   ADD UNIQUE KEY `session_id` (`session_id`);
 
 --
--- Indexes for table `wp_woocommerce_shipping_zones`
---
-ALTER TABLE `wp_woocommerce_shipping_zones`
-  ADD PRIMARY KEY (`zone_id`);
-
---
 -- Indexes for table `wp_woocommerce_shipping_zone_locations`
 --
 ALTER TABLE `wp_woocommerce_shipping_zone_locations`
@@ -1746,14 +1741,10 @@ ALTER TABLE `wp_woocommerce_shipping_zone_methods`
   ADD PRIMARY KEY (`instance_id`);
 
 --
--- Indexes for table `wp_woocommerce_tax_rates`
+-- Indexes for table `wp_woocommerce_shipping_zones`
 --
-ALTER TABLE `wp_woocommerce_tax_rates`
-  ADD PRIMARY KEY (`tax_rate_id`),
-  ADD KEY `tax_rate_country` (`tax_rate_country`),
-  ADD KEY `tax_rate_state` (`tax_rate_state`(2)),
-  ADD KEY `tax_rate_class` (`tax_rate_class`(10)),
-  ADD KEY `tax_rate_priority` (`tax_rate_priority`);
+ALTER TABLE `wp_woocommerce_shipping_zones`
+  ADD PRIMARY KEY (`zone_id`);
 
 --
 -- Indexes for table `wp_woocommerce_tax_rate_locations`
@@ -1762,6 +1753,16 @@ ALTER TABLE `wp_woocommerce_tax_rate_locations`
   ADD PRIMARY KEY (`location_id`),
   ADD KEY `tax_rate_id` (`tax_rate_id`),
   ADD KEY `location_type_code` (`location_type`(10),`location_code`(20));
+
+--
+-- Indexes for table `wp_woocommerce_tax_rates`
+--
+ALTER TABLE `wp_woocommerce_tax_rates`
+  ADD PRIMARY KEY (`tax_rate_id`),
+  ADD KEY `tax_rate_country` (`tax_rate_country`),
+  ADD KEY `tax_rate_state` (`tax_rate_state`(2)),
+  ADD KEY `tax_rate_class` (`tax_rate_class`(10)),
+  ADD KEY `tax_rate_priority` (`tax_rate_priority`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -1786,7 +1787,7 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1201;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1198;
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
@@ -1798,6 +1799,11 @@ ALTER TABLE `wp_postmeta`
 ALTER TABLE `wp_posts`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 --
+-- AUTO_INCREMENT for table `wp_term_taxonomy`
+--
+ALTER TABLE `wp_term_taxonomy`
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+--
 -- AUTO_INCREMENT for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
@@ -1808,15 +1814,10 @@ ALTER TABLE `wp_termmeta`
 ALTER TABLE `wp_terms`
   MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
--- AUTO_INCREMENT for table `wp_term_taxonomy`
---
-ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
---
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `wp_users`
 --
@@ -1866,12 +1867,7 @@ ALTER TABLE `wp_woocommerce_payment_tokens`
 -- AUTO_INCREMENT for table `wp_woocommerce_sessions`
 --
 ALTER TABLE `wp_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
---
--- AUTO_INCREMENT for table `wp_woocommerce_shipping_zones`
---
-ALTER TABLE `wp_woocommerce_shipping_zones`
-  MODIFY `zone_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_shipping_zone_locations`
 --
@@ -1883,15 +1879,25 @@ ALTER TABLE `wp_woocommerce_shipping_zone_locations`
 ALTER TABLE `wp_woocommerce_shipping_zone_methods`
   MODIFY `instance_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `wp_woocommerce_tax_rates`
+-- AUTO_INCREMENT for table `wp_woocommerce_shipping_zones`
 --
-ALTER TABLE `wp_woocommerce_tax_rates`
-  MODIFY `tax_rate_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `wp_woocommerce_shipping_zones`
+  MODIFY `zone_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_tax_rate_locations`
 --
 ALTER TABLE `wp_woocommerce_tax_rate_locations`
-  MODIFY `location_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `location_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `wp_woocommerce_tax_rates`
+--
+ALTER TABLE `wp_woocommerce_tax_rates`
+  MODIFY `tax_rate_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;--
+-- Database: `test`
+--
+CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `test`;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
